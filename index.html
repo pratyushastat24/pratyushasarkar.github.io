@@ -1,75 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratyusha Sarkar - Statistics Research</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Navigation bar */
+    .navbar {
+      background-color: #003366;
+      overflow: hidden;
+    }
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      background-color: #0059b3;
+    }
+    /* Header */
+    header {
+      padding: 40px;
+      text-align: center;
+      background: #f2f2f2;
+    }
+    header h1 {
+      margin: 0;
+    }
+    /* Section styles */
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    /* Progress bars */
+    .bar {
+      margin: 15px 0;
+    }
+    .bar span {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .progress {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .progress div {
+      height: 20px;
+      background: #003366;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
   </div>
-  </div>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Welcome to My Website</h1>
+    <p>Statistics Researcher | Data Science | R Programming</p>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! My name is <strong>Pratyusha Sarkar</strong>. I am a statistics researcher passionate about data analysis, machine learning, and applied probability. 
+    I enjoy building statistical models, working with real-world datasets, and applying theory to solve practical problems.</p>
   </section>
-  
-  
-  <section id="skills" class="card skills" style="margin-top:12px">
-    <h3>Skills</h3>
-    
-    
-    <!-- Each .bar-fill starts with width 0 and JS will animate to the data-percent -->
-    <div class="skill">
-      <div class="skill-name"><span>Nonparametric regression</span><span>95%</span></div>
-        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
-          <div class="bar-fill" data-percent="95"></div>
-            </div>
-            </div>
-            
-            
-            <div class="skill">
-              <div class="skill-name"><span>Gaussian processes</span><span>90%</span></div>
-                <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-                  <div class="bar-fill" data-percent="90"></div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="skill">
-                      <div class="skill-name"><span>Time series (multi-location)</span><span>92%</span></div>
-                        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
-                          <div class="bar-fill" data-percent="92"></div>
-                            </div>
-                            </div>
-                            
-                            
-                            <div class="skill">
-                              <div class="skill-name"><span>R</span><span>88%</span></div>
-                                <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
-                                  <div class="bar-fill" data-percent="88"></div>
-                                    </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="skill">
-                                      <div class="skill-name"><span>Python</span><span>80%</span></div>
-                                        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
-                                          <div class="bar-fill" data-percent="80"></div>
-                                            </div>
-                                            </div>
-                                            
-                                            
-                                            </section>
-                                            
-                                            
-                                            <footer>
-                                            <div class="small">This is a single-file starter site (index.html). To publish: create a GitHub repository, add this file as <code>index.html</code>, and enable GitHub Pages. See the instructions in the assistant message for step-by-step publishing help.</div>
-                                              </footer>
-                                              </div>
-                                              
-                                              
-                                              <script>
-                                              // Simple animation for the skill bars. Edit data-percent or inline styles to customize.
-                                            document.addEventListener('DOMContentLoaded',function(){
-                                              const fills = document.querySelectorAll('.bar-fill');
-                                              fills.forEach((f,i)=>{
-                                                const pct = f.getAttribute('data-percent') || '60';
-                                                // small stagger
-                                                setTimeout(()=>{
-                                                  f.style.width = pct + '%';
-                                                }, 120*i);
-                                              });
-                                            });
-                                            </script>
-                                              </body>
-                                              </html>
+
+  <!-- Research -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <p>My work focuses on:</p>
+    <ul>
+      <li>Bayesian Nonparametrics</li>
+      <li>Gaussian Processes</li>
+      <li>High-dimensional Data Analysis</li>
+      <li>Statistical Machine Learning</li>
+    </ul>
+
+    <h3>Skills Progress</h3>
+    <div class="bar">
+      <span>R Programming</span>
+      <div class="progress"><div style="width:90%">90%</div></div>
+    </div>
+    <div class="bar">
+      <span>Python</span>
+      <div class="progress"><div style="width:75%">75%</div></div>
+    </div>
+    <div class="bar">
+      <span>Bayesian Statistics</span>
+      <div class="progress"><div style="width:85%">85%</div></div>
+    </div>
+    <div class="bar">
+      <span>Machine Learning</span>
+      <div class="progress"><div style="width:80%">80%</div></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Or connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+  </section>
+
+</body>
+</html>
