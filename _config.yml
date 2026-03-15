@@ -37,6 +37,7 @@ collections:
 
 # Plugins often used with al-folio
 plugins:
+  - jekyll-github-metadata
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
