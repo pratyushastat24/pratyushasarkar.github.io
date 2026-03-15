@@ -1,6 +1,6 @@
 # Site settings
 title: "Pratyusha Sarkar"
-description: "Portfolio and personal website of Pratyusha Sarkar."
+description: "Academic portfolio for Pratyusha Sarkar, PhD Student in Statistics at UMBC. Research on Nonparametric Statistics, Bayesian Methods, and Causal Inference."
 url: "https://pratyushastat24.github.io"   # no trailing slash
 baseurl: ""                                # keep empty for user site
 
